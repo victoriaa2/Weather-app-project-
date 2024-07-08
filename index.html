@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="src/style.css" />
+
+  <title>Homework3 Weather App </title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        London
+      </div>
+      <div class="col">
+        Paris
+      </div>
+      <div class="col">
+        Germany
+      </div>
+      <div class="col">
+        Sydney
+      </div>
+      <br />
+      <br />
+      <br />
+      <form id="search-form">
+
+        <input type="search" placeholder="Enter a city.." required class="search-input" id="search-input" />
+
+        <input type="submit" value="search" class="search-button" />
+
+      </form>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <p>
+        Sunday, 13 June 2024 | Local Time 20:00pm
+      </p>
+      <br />
+      <br />
+      <br />
+      <h1 id="current-city">
+        London, GB
+      </h1>
+      <br />
+      <br />
+      <br />
+
+      <div class="temputure-paragrath-one">
+        <p>
+          ☁️
+        </p>
+      </div>
+
+      <div id="temputure-paragrath-two">
+        <p>
+          8°C
+        </p>
+      </div>
+
+      <br />
+      <br />
+
+
+      <div class="temputure-paragrath-three">
+        <p>
+          Precipitation: 86% | Humidity: 45% | Wind: 10 km/h
+        </p>
+      </div>
+
+      <br />
+      <br />
+      <p class="daily-forcast" />
+      Daily Forcast
+      </p>
+
+      <hr />
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="col">
+          NOW
+        </div>
+        <div class="col">
+          MON
+        </div>
+        <div class="col">
+          TEU
+        </div>
+        <div class="col">
+          WED
+        </div>
+        <div class="col">
+          THU
+        </div>
+        <div class="col">
+          FRI
+        </div>
+        <div class="col">
+          SAT
+        </div>
+
+
+      </div>
+
+      <br />
+      <div class="row-two">
+        <div class="col cloud-icon">
+          ☁️
+        </div>
+
+        <div class=" col cloud-icon">
+          🌦
+        </div>
+
+        <div class="col cloud-icon">
+          ☁️
+        </div>
+
+        <div class="col cloud-icon">
+          🌧
+        </div>
+
+        <div class="col cloud-icon">
+          ☁️
+        </div>
+
+        <div class="col cloud-icon">
+          🌦
+        </div>
+
+        <div class="col cloud-icon">
+          ⛈
+        </div>
+
+
+      </div>
+
+      <div class="row">
+
+        <div class="col temperature">
+          8°
+        </div>
+
+        <div class="col temperature ">
+          12°
+        </div>
+
+        <div class="col temperature">
+          11°
+        </div>
+
+        <div class="col temperature">
+          8°
+        </div>
+
+        <div class="col temperature">
+          9°
+        </div>
+
+        <div class="col temperature">
+          8°
+        </div>
+
+        <div class="col temperature">
+          7°
+        </div>
+      </div>
+
+    </div>
+    <script src="src/index.js"></script>
+  </div>
+
+  <footer>
+    Coded by Victoria Adeleke 👩🏾‍💻 with HTML, CSS & Javascript
+  </footer>
+
+
+</body>
+
+</html>

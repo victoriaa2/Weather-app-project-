@@ -1,0 +1,76 @@
+.row {
+  padding: 10px 10px;
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-two {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #dceef8;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+}
+
+.cloud-icon {
+  font-size: 30px;
+  background-color: #dceef8;
+  border-spacing: 5px;
+  padding: 4px 4px;
+  border-collapse: separate;
+  border-radius: 0%;
+}
+
+.h1 {
+  font-size: 45px;
+  display: block;
+  text-align: center;
+}
+
+.temputure-paragrath-one {
+  font-size: 60px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+}
+
+.temputure-paragrath-two {
+  font-size: 22px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+}
+
+.temputure-paragrath-three {
+  padding-left: 3px;
+  font-size: 10px;
+  line-height: 0px;
+  display: block;
+  text-align: center;
+}
+
+.daily-forcast {
+  text-align: left;
+}
+
+body {
+  background-color: white;
+  padding: 30px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  font-weight: 300;
+  margin: 13px 0;
+}
