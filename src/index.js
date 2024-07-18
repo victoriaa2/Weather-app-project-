@@ -48,6 +48,10 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temputure-paragrath-two");
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = temperature;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  let windSpeedElement = document.querySelector("#wind-speed");
+  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 }
 
 function search(event) {
