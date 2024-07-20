@@ -48,6 +48,8 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temputure-paragrath-two");
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = temperature;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
   let humidityElement = document.querySelector("#humidity");
