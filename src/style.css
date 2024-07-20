@@ -35,6 +35,17 @@
   text-align: center;
 }
 
+.icon {
+  font-size: 44px;
+  margin-top: 22px;
+  width: 90px;
+  height: 88px;
+
+  display: block;
+  margin: 0 auto;
+  width: 550px;
+}
+
 .temputure-paragrath-one {
   font-size: 60px;
   line-height: 30px;

@@ -48,6 +48,8 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temputure-paragrath-two");
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = temperature;
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   let windSpeedElement = document.querySelector("#wind-speed");
@@ -66,3 +68,15 @@ function searchCity(city) {
 
   axios.get(apiUrl).then(displayTemperature);
 }
+
+function handleSearchSubmit(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-form-input");
+
+  searchCity(searchInput.value);
+}
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("London");
